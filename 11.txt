@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,com,x;
+	com = 0;
+	x = 1;
+	cin>>a;
+	while(com<1){
+		for(int i = 1;i <=a;i++){
+			if(x%i!=0){
+				break;
+			}
+			if(i == a){
+				com += 1;
+			}
+		}
+		if(com<1){x+=1;}
+	}
+	cout<<x;
+	
+}

@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b;
+	printf("digita un mes\n");
+	cin >> a;
+	printf("digita un dia de ese mes\n");
+	cin >> b;
+	cout << b << "/" << a << ":" << endl;
+	if(a>12 || a<1){
+		printf("mes invalido");
+	}
+	else{
+		if(a<=7 && a!=2){
+			if (a%2==0 && a > 0 && b > 0 && b<=30){
+				printf("fecha valida");
+			}
+			else if (a%2!=0 && a > 0 &&b > 0 && b<=31){
+				printf("fecha valida");
+			}
+			else{
+				printf("fecha invalida");
+			}
+		}
+		else if (a>7 && a!=2){
+			if (a%2==0 && a > 0 &&b > 0 && b<=31){
+				printf("fecha valida");
+				cout <<"hijueputa"<< endl;
+			}
+			else if (a%2!=0 && a > 0 &&b > 0 && b<=30){
+				printf("fecha valida");
+			}
+			else{
+				printf("fecha invalida");
+			}
+		}
+		else if (a == 2){}
+			if (b<29 && b>0){
+				printf("fecha valida");
+			}
+			else if(b == 29){
+				printf("es valido en bisiento");
+			}
+			else{
+				printf("fecha invalida");
+			}
+	}
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char b;
+	cin >> b;
+	int a = b;
+	if(a>=65&&a<=90){
+		if(a==65||a==69||a==73||a==79||a==85){
+			cout<<"es una vocal"<<endl;
+		}else{cout<<"es una consonante"<<endl;}
+	}
+	else if(a>=97&&a<=122){
+		if(a==97||a==101||a==105||a==111||a==117){
+			cout<<"es una vocal"<<endl;
+		}else{cout<<"es una consonante"<<endl;}
+	}
+	else{cout<<"no es una letra";}
+}
